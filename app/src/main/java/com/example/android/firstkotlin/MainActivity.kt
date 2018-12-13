@@ -1,8 +1,7 @@
 package com.example.android.firstkotlin
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             textViewId.text = "new"}
 
         button1.setOnLongClickListener{
-            textViewId.text = null
+            textViewId.text = "not null"
             return@setOnLongClickListener true
         }
 
